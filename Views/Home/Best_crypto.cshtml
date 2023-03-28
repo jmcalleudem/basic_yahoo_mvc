@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Best Crypto!";
+}
+
+
+<h1> Best Crypto Info </h1>
+
+<ul>
+@foreach (List<string> row in ViewData["cryptos"] as List<List<string>>)
+{
+        <li>@row[0] ** Precio inicial:@row[1] ** Cambio: @row[2] ** Cambio %: @row[3]</li>
+}
+</ul>
